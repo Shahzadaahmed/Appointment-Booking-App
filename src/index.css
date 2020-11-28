@@ -1,13 +1,251 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: lightblue;
 }
+
+/* Sign Up and Log In Component */
+
+#sign-up-container {
+  border: 5px double navy;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  background-color: whitesmoke;
+}
+
+#sign-up-header {
+  text-align: center;
+  color: navy;
+  text-decoration: underline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 10px;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.sign-up-form {
+  border: 2px solid navy;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 10px;
+}
+
+/* Sign Up and Log In Component styling completed */
+
+#header {
+  color: darkblue;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 15px;
+}
+
+#appointment-container {
+  border: 5px double darkblue;
+  margin: 10px 0px 10px 0px;
+  background-color: whitesmoke;
+}
+
+#inputfield-container {
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.input-group-text {
+  color: blue;
+  width: 130px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-control {
+  color: blue;
+  outline: 0;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: white;
+}
+
+#btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#logout-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#logout-btn {
+  width: 120px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: 2px solid darkred;
+}
+
+#logout-btn:hover {
+  color: darkred;
+  background-color: white;
+  border: 2px solid red;
+}
+
+#add-appointment {
+  font-weight: bold;
+  border: 2px solid darkblue;
+}
+
+#add-appointment:hover {
+  color: darkblue;
+  background-color: white;
+  border: 2px solid blue;
+}
+
+.dropdown {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+#target-element2 {
+  width: 100px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: blue;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+}
+
+#data-container {
+  border: 5px double black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.table {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#search-appointment {
+  border: 2px solid darkblue;
+  height: 40px;
+  line-height: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: blue;
+  background-color: #E9ECEF;
+  font-size: 18px;
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+}
+
+/* Forget Password Component */
+
+#father-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#registeration-container {
+  border: 5px double darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+#password-reset-header {
+  color: darkblue;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#inputfield-container {
+  border: 2px solid darkblue;
+  border-radius: 5px;
+}
+
+.input-group-text {
+  color: blue;
+  width: 125px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#reset_email {
+  color: blue;
+  outline: 0;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: white;
+}
+
+#reset-password-btn {
+  font-weight: bold;
+  outline: 0;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#reset-password-btn:hover {
+  color: darkblue;
+  background-color: white;
+  border: 2px solid darkblue;
+}
+
+#btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-last-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#reset-password-el {
+  cursor: pointer;
+}
+
+/* Styling completed successfully */
